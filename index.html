@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEED EXPENSES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DEED EXPENSES</h1>
+
+        <!-- Amount and Percentage Inputs -->
+        <div class="input-section">
+            <h4>Total Value</h4>
+            <input id="Amount" placeholder="Enter Amount" type="number">
+
+            <h4>Stamp Duty</h4>
+            <input id="Percent" placeholder="Enter Percentage" type="number">
+
+            <!-- Button to view percentage amount -->
+            <button id="viewPercentAmount">View stamp duty</button>
+            <div id="PercentResult"></div>
+
+            <!-- Button to add 6000 to the percentage -->
+            <button id="add6000">Drafting fee</button>
+            <div id="after6000"></div>
+
+            <h4>Registration fee</h4>
+            <input id="Additional" placeholder="Additional amount" type="number">
+
+            <!-- Button to add the additional amount -->
+            <button id="addAdditional">Add</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

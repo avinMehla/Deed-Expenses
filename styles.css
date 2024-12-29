@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b81; /* Bold color for the title */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    font-size: 16px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff7e5f;
+    background-color: #ffe0e3;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    background-color: #ff7e5f; /* Matching the gradient */
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+div {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#PercentResult, #after6000, #result {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#PercentResult {
+    color: #00b894; /* Green color for positive results */
+}
+
+#after6000 {
+    color: #ff6b81; /* Red color for add-6000 result */
+}
+
+#result {
+    color: #ff9f00; /* Orange color for additional amount result */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button, input {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
